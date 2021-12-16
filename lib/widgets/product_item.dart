@@ -5,7 +5,6 @@ import '../screens/product_detail_screen.dart';
 import '../provider/product.dart';
 import '../provider/cart.dart';
 
-
 class ProductItem extends StatelessWidget {
   // final String id;
   // final String title;
@@ -50,7 +49,7 @@ class ProductItem extends StatelessWidget {
             style: const TextStyle(fontSize: 12),
           ),
           trailing: IconButton(
-            icon: Icon(Icons.shopping_cart),
+            icon: const Icon(Icons.shopping_cart),
             color: Colors.red,
             onPressed: () {
               cart.addItem(product.id, product.price, product.title);
